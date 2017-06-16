@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FullScreenAlert_Example' do
+  pod 'FullScreenAlert', :path => '../'
+
+  target 'FullScreenAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
