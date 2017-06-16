@@ -1,0 +1,6 @@
+framework module Pods_FullScreenAlert_Tests {
+  umbrella header "Pods-FullScreenAlert_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

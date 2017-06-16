@@ -1,0 +1,6 @@
+framework module FullScreenAlert {
+  umbrella header "FullScreenAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

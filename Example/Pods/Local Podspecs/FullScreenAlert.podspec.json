@@ -1,0 +1,22 @@
+{
+  "name": "FullScreenAlert",
+  "version": "0.1.0",
+  "summary": "A short description of FullScreenAlert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MaeseppTarvo/FullScreenAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MaeseppTarvo": "tarvomaesepp@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/MaeseppTarvo/FullScreenAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FullScreenAlert/Classes/**/*"
+}
