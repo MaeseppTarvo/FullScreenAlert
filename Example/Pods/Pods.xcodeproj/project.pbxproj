@@ -10,8 +10,10 @@
 		2F9F96258DD26C481477F0B68DB24DF3 /* FullScreenAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D720CC873DE9ECFCB6F8F1C1C098556C /* FullScreenAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4969FEFDEFB4166604B7B4AE9D1EB895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		59B7DE11D569BCE650EE129045083A9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		610888331EF44236004D943D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610888321EF44236004D943D /* AlertView.swift */; };
+		618779FE1EF559AD00A85B0C /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618779FA1EF5539500A85B0C /* AlertView.xib */; };
+		618779FF1EF559AD00A85B0C /* FullScreenAlertMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618779F81EF54D8200A85B0C /* FullScreenAlertMedia.xcassets */; };
 		71187617086B53B8553B3672C73EA1BF /* Pods-FullScreenAlert_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C364F598EECD5DE25F6ECEFD9FAAC /* Pods-FullScreenAlert_Tests-dummy.m */; };
-		98FB0008C83BC794DF70B6D68C53447B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73962B504BF6723D2D4A141EC0B08684 /* ReplaceMe.swift */; };
 		9BAE1AAE1CCB14D5070D2B430AAA3FE6 /* Pods-FullScreenAlert_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F40BEBDD417B09F852B89E1E8F75C4 /* Pods-FullScreenAlert_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7A47692EE910FAF9141C76236230B1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D016294DD1B0246F5AE72CFD8BF8CED1 /* Pods-FullScreenAlert_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE81F173F3BEF01686353C517ED9AD1 /* Pods-FullScreenAlert_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,10 +33,10 @@
 
 /* Begin PBXFileReference section */
 		03DAF3F1383B81194FB1AAEF50DBE789 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		113013033BD84CF66281D55562C5A1DA /* Pods-FullScreenAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FullScreenAlert_Tests.modulemap"; sourceTree = "<group>"; };
-		1318355D3DAB4FF3C502059A8229CE6C /* Pods_FullScreenAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FullScreenAlert_Tests.framework; path = "Pods-FullScreenAlert_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		113013033BD84CF66281D55562C5A1DA /* Pods-FullScreenAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FullScreenAlert_Tests.modulemap"; sourceTree = "<group>"; };
+		1318355D3DAB4FF3C502059A8229CE6C /* Pods_FullScreenAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FullScreenAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCE7674B7CB185F353A9F0F38CAEE64 /* FullScreenAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FullScreenAlert-dummy.m"; sourceTree = "<group>"; };
-		2BCA87C3DBCB5ACE6FAB16D94E448104 /* Pods_FullScreenAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FullScreenAlert_Example.framework; path = "Pods-FullScreenAlert_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCA87C3DBCB5ACE6FAB16D94E448104 /* Pods_FullScreenAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FullScreenAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B34295AB62E9B644AB922310F3E5B95 /* Pods-FullScreenAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FullScreenAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3B504EDB423F2A40B0D1E2BC4D51D04C /* Pods-FullScreenAlert_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FullScreenAlert_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3B82907FF31E1230B86B45AEC601D507 /* Pods-FullScreenAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FullScreenAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -43,24 +45,26 @@
 		4A56BA420651DD3522F3216703572BB0 /* Pods-FullScreenAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FullScreenAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5201D8DBD24187F8E5AC6F6AAE389BF9 /* Pods-FullScreenAlert_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FullScreenAlert_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5712671CBAEBA9D1D63598EE08258FDC /* Pods-FullScreenAlert_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FullScreenAlert_Example-resources.sh"; sourceTree = "<group>"; };
+		610888321EF44236004D943D /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		618779F81EF54D8200A85B0C /* FullScreenAlertMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FullScreenAlertMedia.xcassets; sourceTree = "<group>"; };
+		618779F91EF5539500A85B0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlertView.xib; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		70A196E69D089B6705C0D15F5B262E7A /* Pods-FullScreenAlert_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FullScreenAlert_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73962B504BF6723D2D4A141EC0B08684 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		74BED7A8C410EC5A95A67B3331BF1EFC /* Pods-FullScreenAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FullScreenAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7A022E08014265AE9EC37BE69B64E5FD /* Pods-FullScreenAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FullScreenAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		929EEE1F73F891559B36A6521572A640 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		957C3E2508ACEE4C505095FB0A402184 /* Pods-FullScreenAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FullScreenAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		95F40BEBDD417B09F852B89E1E8F75C4 /* Pods-FullScreenAlert_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FullScreenAlert_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9A1009487F8808C96A6F659456318038 /* FullScreenAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FullScreenAlert.modulemap; sourceTree = "<group>"; };
+		9A1009487F8808C96A6F659456318038 /* FullScreenAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FullScreenAlert.modulemap; sourceTree = "<group>"; };
 		BB5770DB2C5401AB772F937534255232 /* Pods-FullScreenAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FullScreenAlert_Example-dummy.m"; sourceTree = "<group>"; };
 		C73C364F598EECD5DE25F6ECEFD9FAAC /* Pods-FullScreenAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FullScreenAlert_Tests-dummy.m"; sourceTree = "<group>"; };
 		C78C6B9D97930170E70DDBD3C1C7BEB8 /* Pods-FullScreenAlert_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FullScreenAlert_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C85320A563F876B065E677BA36BA2F9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC02FD322BF367CBBBE7BDB34A18437 /* Pods-FullScreenAlert_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FullScreenAlert_Tests-resources.sh"; sourceTree = "<group>"; };
-		D564E0F48A764C0C240AE6E64E1CED3F /* Pods-FullScreenAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FullScreenAlert_Example.modulemap"; sourceTree = "<group>"; };
+		D564E0F48A764C0C240AE6E64E1CED3F /* Pods-FullScreenAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FullScreenAlert_Example.modulemap"; sourceTree = "<group>"; };
 		D720CC873DE9ECFCB6F8F1C1C098556C /* FullScreenAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FullScreenAlert-umbrella.h"; sourceTree = "<group>"; };
-		E0DF2F286A1C45F8201B51BB77AA550F /* FullScreenAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FullScreenAlert.framework; path = FullScreenAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DF2F286A1C45F8201B51BB77AA550F /* FullScreenAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FullScreenAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FC3EFF58224D98D14080D77E213013 /* FullScreenAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FullScreenAlert.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		611878441EF445BF00631E37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				618779FA1EF5539500A85B0C /* AlertView.xib */,
+				618779F81EF54D8200A85B0C /* FullScreenAlertMedia.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		72BF94A0C24D31F84B3DC44E50D09B10 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,18 +169,17 @@
 		838BCED337545366FE07C0F0EA8BC79B /* FullScreenAlert */ = {
 			isa = PBXGroup;
 			children = (
+				611878441EF445BF00631E37 /* Resources */,
 				91076BBAB4A65B8E388A857809F73171 /* Classes */,
 			);
-			name = FullScreenAlert;
 			path = FullScreenAlert;
 			sourceTree = "<group>";
 		};
 		91076BBAB4A65B8E388A857809F73171 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				73962B504BF6723D2D4A141EC0B08684 /* ReplaceMe.swift */,
+				610888321EF44236004D943D /* AlertView.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -296,6 +308,7 @@
 				71AAA6C978981DC6188B27727B1E223A /* Sources */,
 				4B33428C7B95C0E5B49FFDDF0F528EF1 /* Frameworks */,
 				064128493B050870F80E5811C1C3948E /* Headers */,
+				618779FD1EF559A600A85B0C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +327,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					DA01C91DA91F4DDD22816028CF159708 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -334,6 +352,18 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		618779FD1EF559A600A85B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618779FE1EF559AD00A85B0C /* AlertView.xib in Resources */,
+				618779FF1EF559AD00A85B0C /* FullScreenAlertMedia.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45A2CDAD5A2DE3A1CA7AB1DC7874F927 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -348,7 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4AE09B1C051BCD5F73FD78AE5F4697B /* FullScreenAlert-dummy.m in Sources */,
-				98FB0008C83BC794DF70B6D68C53447B /* ReplaceMe.swift in Sources */,
+				610888331EF44236004D943D /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,11 +401,23 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		618779FA1EF5539500A85B0C /* AlertView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				618779F91EF5539500A85B0C /* en */,
+			);
+			name = AlertView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		08F235CEAEF76948C136B21668397483 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8FC3EFF58224D98D14080D77E213013 /* FullScreenAlert.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -391,7 +433,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FullScreenAlert/FullScreenAlert-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FullScreenAlert/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FullScreenAlert/FullScreenAlert.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -461,7 +503,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-FullScreenAlert_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FullScreenAlert_Example/Pods-FullScreenAlert_Example.modulemap";
@@ -518,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -566,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8FC3EFF58224D98D14080D77E213013 /* FullScreenAlert.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -581,7 +624,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FullScreenAlert/FullScreenAlert-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FullScreenAlert/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FullScreenAlert/FullScreenAlert.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -637,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -664,7 +707,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-FullScreenAlert_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FullScreenAlert_Example/Pods-FullScreenAlert_Example.modulemap";

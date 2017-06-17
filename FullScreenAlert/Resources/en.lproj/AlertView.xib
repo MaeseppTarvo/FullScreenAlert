@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="FullScreenAlert" customModuleProvider="target">
+            <connections>
+                <outlet property="alertButton" destination="6oT-Vg-F0l" id="etU-Fl-jhd"/>
+                <outlet property="alertImageView" destination="tCF-Hk-q1z" id="mfO-ms-1Z5"/>
+                <outlet property="alertMessageLabel" destination="sgE-fS-WgB" id="YKP-NA-h29"/>
+                <outlet property="alertTitleLabel" destination="uVv-Sn-4yW" id="eK0-DI-5kQ"/>
+                <outlet property="blurEffect" destination="U3j-H9-UDp" id="OMA-zU-XSI"/>
+                <outlet property="view" destination="UPp-z7-qIG" id="XsO-yv-Tuw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UPp-z7-qIG">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3j-H9-UDp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZUa-75-Wdq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Success.png" translatesAutoresizingMaskIntoConstraints="NO" id="tCF-Hk-q1z">
+                    <rect key="frame" x="137" y="75" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="i56-Gj-tfd"/>
+                        <constraint firstAttribute="height" constant="100" id="q7E-Y9-bYb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU'RE ALL SET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVv-Sn-4yW">
+                    <rect key="frame" x="112" y="213" width="149" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK8-RS-IIE">
+                    <rect key="frame" x="137" y="267" width="100" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PzA-sd-G4a"/>
+                        <constraint firstAttribute="width" constant="100" id="y8O-K5-gYc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oT-Vg-F0l">
+                    <rect key="frame" x="112" y="434" width="150" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="70W-26-TzW"/>
+                        <constraint firstAttribute="width" constant="150" id="Gps-Tn-9m7"/>
+                    </constraints>
+                    <state key="normal" title="OKAY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adam's itinerary has been added to the &quot;my guides&quot; tab in the menu." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgE-fS-WgB">
+                    <rect key="frame" x="47" y="326" width="280" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="nmQ-n8-nWP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="U3j-H9-UDp" firstAttribute="leading" secondItem="UPp-z7-qIG" secondAttribute="leading" id="4s1-It-Ew9"/>
+                <constraint firstItem="sgE-fS-WgB" firstAttribute="top" secondItem="wK8-RS-IIE" secondAttribute="bottom" constant="58" id="BwQ-6N-qGW"/>
+                <constraint firstItem="sgE-fS-WgB" firstAttribute="centerX" secondItem="wK8-RS-IIE" secondAttribute="centerX" id="BxK-JC-AlE"/>
+                <constraint firstItem="tCF-Hk-q1z" firstAttribute="top" secondItem="UPp-z7-qIG" secondAttribute="top" constant="75" id="GB2-kU-sMg"/>
+                <constraint firstItem="uVv-Sn-4yW" firstAttribute="top" secondItem="tCF-Hk-q1z" secondAttribute="bottom" constant="38" id="JaJ-dC-chb"/>
+                <constraint firstItem="wK8-RS-IIE" firstAttribute="centerX" secondItem="uVv-Sn-4yW" secondAttribute="centerX" id="PVu-Q8-frq"/>
+                <constraint firstItem="tCF-Hk-q1z" firstAttribute="centerX" secondItem="UPp-z7-qIG" secondAttribute="centerX" id="Zbt-Bv-CoE"/>
+                <constraint firstItem="6oT-Vg-F0l" firstAttribute="top" secondItem="sgE-fS-WgB" secondAttribute="bottom" constant="87.5" id="ZeE-41-x9k"/>
+                <constraint firstAttribute="trailing" secondItem="U3j-H9-UDp" secondAttribute="trailing" id="a7V-Dj-3AS"/>
+                <constraint firstItem="U3j-H9-UDp" firstAttribute="top" secondItem="UPp-z7-qIG" secondAttribute="top" id="bc5-Oi-CB0"/>
+                <constraint firstAttribute="bottom" secondItem="U3j-H9-UDp" secondAttribute="bottom" id="dHu-6d-b7j"/>
+                <constraint firstItem="6oT-Vg-F0l" firstAttribute="centerX" secondItem="sgE-fS-WgB" secondAttribute="centerX" id="nVS-gO-BzO"/>
+                <constraint firstItem="uVv-Sn-4yW" firstAttribute="centerX" secondItem="tCF-Hk-q1z" secondAttribute="centerX" id="tKC-8L-Ikq"/>
+                <constraint firstItem="wK8-RS-IIE" firstAttribute="top" secondItem="uVv-Sn-4yW" secondAttribute="bottom" constant="30" id="xiz-l2-EA3"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Success.png" width="100" height="100"/>
+    </resources>
+</document>
